@@ -1,0 +1,21 @@
+#include <string>
+#include <iostream>
+using namespace std;
+int main() {
+	int i, l;
+	string c;
+	string s;
+	getline(cin,c);
+	getline(cin,s);
+  l = c.size();
+  if ((l>1)||(l<1))
+  cout<<"Данные введены некорректно";
+  else {
+	l = s.size();
+	for (i = 0; i < l; i++)
+		if (s[i] == c[0])
+			cout << s[i] << s[i];
+		else cout << s[i];
+    }
+	return 0;
+}
