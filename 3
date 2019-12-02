@@ -1,0 +1,14 @@
+#include <string>
+#include <iostream>
+using namespace std;
+int main() {
+	int i, l, f=0;
+	string s;
+	getline(cin,s);
+	l = s.size();
+	for (i = 0; i < l; i++)
+		if ((((int)s[i] >= 65) && ((int)s[i] <= 90)) || (((int)s[i] >= 97) && ((int)s[i] <= 122)))
+			f++;
+		cout << f;
+	return 0;
+}
