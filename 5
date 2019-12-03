@@ -1,0 +1,16 @@
+#include <string>
+#include <iostream>
+using namespace std;
+int main() {
+	int i, l1,l2,f=0;
+	string s,s0;
+	getline(cin, s);
+	getline(cin,s0);
+	l1 = s0.size();
+	l2 = s.size();
+	for (i = 0; i <= l2-l1; i++)
+		if (s.substr(i, l1) == s0)
+			f++;
+		cout << f;
+	return 0;
+}
